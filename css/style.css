@@ -6,33 +6,44 @@
         "aside aside"
         "section1 section2"
         "footer footer";
-
-    grid-template-columns: 1fr 1fr;
-    border-style: dotted; 
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin: 0 auto;
     }
 
 header {
     grid-area: header;
-    border-style: dashed;
-    color: rgb(62, 160, 112, 1)
+    color: rgb(62, 160, 112, 1);
+    text-align: center;
+    border-style: inset;
+    border-width: 0.75rem;
+    border-color: blueviolet;
+    background-color: rgb(26, 26, 29);
 }
 
 nav {
     grid-area: nav;
+    border-style: outset;
+    border-color: blueviolet;
+    border-width: 0.25rem;
 }
 
 aside {
     grid-area: aside;
+    border-style: double;
 }
 
 .leftimg {
     grid-area: section1;
+    border-style: double;
 }
 
 .rightimg {
     grid-area: section2;
+    border-style: double;
 }
 
 footer {
     grid-area: footer;
+    border-style: double;
 }
