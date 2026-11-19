@@ -1,1 +1,36 @@
-/* Här skrivs all din CSS */
+.container {
+    display:grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside aside"
+        "section1 section2"
+        "footer footer";
+
+    grid-template-columns: 1fr 1fr;
+    border-style: dotted; 
+    }
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.leftimg {
+    grid-area: section1;
+}
+
+.rightimg {
+    grid-area: section2;
+}
+
+footer {
+    grid-area: footer;
+}
