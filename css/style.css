@@ -13,6 +13,8 @@
 
 header {
     grid-area: header;
+    border-style: dashed;
+    color: rgb(62, 160, 112, 1)
 }
 
 nav {
